@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gấu shin Totoro</title>
+        <link href="images/icon.jpg" rel="shortcut icon"/>
+        <link href="css/style.css" rel="stylesheet"/>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <!--html header-->
+        <header>
+            <div class="head">
+                <div class="head-left">
+                    <a href="https://www.facebook.com/gaubongmapshop/?epa=SEARCH_BOX"><i class="fa fa-facebook"></i></a>
+                    <a href="https://chrome.google.com/webstore/category/extensions?hl=en"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://twitter.com/login?lang=vi"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=vi"><i class="fa fa-instagram"></i></a>
+                </div>
+                <div class="head-right">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Tìm kiếm sản phẩm" />
+                            </td>
+                            <td>
+                               <a id="search" href="#"><i class="fa fa-search"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </header>
+        <!--html nav-->
+        <div class="wrapper">
+            <a href="#" class="logo col20">
+                <img src="images/logo.png" alt="gaubongmap"/>
+            </a>
+            <ul class="menu col80">
+                <li><a target="_self" href="Homepage.html"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a target="_self" href="#introduction"><i class="fa fa-info"></i> Giới thiệu</a></li>
+                <li><a target="_self" href="sanpham.html"><i class="fa fa-shopping-basket"></i> Sản Phẩm</a></li>
+                <li><a target="_self" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-phone"></i> Liên hệ</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+         <!-- The Modal -->
+         <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Liên hệ</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form > 
+                            <table class="infor">
+                                <tr>
+                                    <th>Họ và tên</th>
+                                    <td><input class="F" type="text" placeholder="Fullname" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Số điện thoại</th>
+                                    <td><input class="F" type="text" placeholder="phone nummber" required ></td>
+                                </tr>
+                                <tr>
+                                    <th>Địa chỉ mail</th>
+                                    <td><input type="email" placeholder="email" required></td>
+                                </tr>
+                                <tr>
+                                    <th>Lý do liên hệ</th>
+                                    <td><textarea cols="40" rows="7" required> </textarea></td>
+                                </tr>
+                                                    
+                            </table>
+                        </form> 
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-info">Gửi liên hệ</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--htmlslice product-->
+        <section class="slice-product">
+            <div class="slider">
+                <div class="slider-wrapper flex">
+                    <div class="slide flex">
+                        <div class="slide-image slider-link prev">
+                            <img src="images/introduction/teddy3.jpg" alt="gau_teddy"/>>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-note">Top sản phẩm bán chạy</div>
+                            <div class="slide-title">Gấu Teddy</div>
+                            <div class="slide-text">Hơn +100 mẫu Gấu Teddy với nhiều thiết kế Teddy khác nhau, Gấu Teddy cao cấp được nhập khẩu trực tiếp và được nhồi 100% Bông Gòn đàn hồi trắng nên rất êm khi ôm. Chuyên mục này sẽ giới thiệu với các bạn những mẫu Gấu Teddy đang HOT nhất và được đông đảo giới trẻ yêu thích nhất. </div>
+                            <div class="slide-more"><a href="sanpham.html">Xem thêm</a></div>
+                        </div>	
+                    </div>
+                    <div class="slide flex">
+                        <div class="slide-image slider-link next">
+                            <img src="images/introduction/gaukemchan1.jpg" alt="Gau_kem_chan"/>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-note">Top sản phẩm bán chạy</div>
+                            <div class="slide-title">Gấu bông kèm chăn</div>
+                            <div class="slide-text">Gấu Bông Kèm Chăn mềm với thiết kế hoạt hình đơn giản dễ thương cùng lông nhung mềm mịn, thiết kế nhỏ gọn cùng chức năng dùng làm gối tựa lưng độc đáo, gấu bông còn có cả túi chứa mền nhung, giúp giữ ấm trong không gian phòng lạnh hiệu quả.</div>
+                            <div class="slide-more"><a href="sanpham.html">Xem thêm</a></div>
+                        </div>	
+                    </div>	
+                    <div class="slide flex">
+                        <div class="slide-image slider-link next">
+                            <img src="images/introduction/gauhoathinh.jpg" alt="Gau_hoat_hinh"/>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-note">Top sản phẩm bán chạy</div>
+                            <div class="slide-title">Gấu hoạt hình</div>
+                            <div class="slide-text">Thoả sức lựa chọn cho mình một chú gấu với hình ảnh nhân vật hoạt hình mà mình yêu thích. Sản phẩm thiết kế đa dạng và cập nhật nhiều nhân vật hoạt hình hot teen.</div>
+                            <div class="slide-more"><a href="sanpham.html">Xem thêm</a></div>
+                        </div>	
+                    </div>
+                    <div class="slide flex">
+                        <div class="slide-image slider-link next">
+                            <img src="images/introduction/gaumini.jpg" alt="Gaumini">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="slide-content">
+                            <div class="slide-note">Top sản phẩm bán chạy</div>
+                            <div class="slide-title">Gấu bông mini</div>
+                            <div class="slide-text">Phong cách thời trang, trọng lượng nhẹ, mềm mại và nhiều màu sắc.Cho các bé, và cho cả người lớn.</div>
+                            <div class="slide-more"><a href="sanpham.html">Xem thêm</a></div>
+                        </div>	
+                    </div>
+                </div>
+                <div class="arrows">
+                    <a href="#" title="Previous" class="arrow slider-link prev"></a>
+                    <a href="#" title="Next" class="arrow slider-link next"></a>
+                </div>
+            </div>
+        </section>
+
+        <!--html gioi thieu san pham-->
+        <div> 
+            <a href="Homepage.html"><i class="fa fa-home"></i>Trang chủ </a>>
+            <a href="Gau_shin_totoro.html">Gấu shin totoro</a> 
+        </div> 
+        <section>
+            <div class="introduce">   
+                <div class="ha">
+                    <img id="mainImg" src="image/cartoon/1.jpg" alt="gấu bông"/>
+                    <div class="thumbnail felx">
+                        <div><img src="image/sp/2.1.jpg" alt="gấu bông"/></div>
+                        <div><img src="image/sp/2.2.jpg" alt="gấu bông"/></div>
+                        <div><img src="image/sp/2.4.jpg " alt="gấu bông"/></div>
+                    </div>
+                </div> 
+                <div class="product"> <!--HIỆU ỨNG CHO DÒNG CHỮ-->      
+                    <h1 class="animate__animated animate__pulse" style="font-weight: bold;">GẤU SHIN TOTORO</h1>
+                    <hr width="100%" size="2px" color="red"/>
+                    <div><!-- TẠO NÚT BẤM CHỌN SIZE HIỆN GIÁ TIỀN-->
+                        <div class="price">
+                            <h1 id="price1">165.000vnd</h1>
+                            <h1 id="price2">330.000vnd</h1>
+                            <h1 id="price3">450.000vnd</h1>
+                        </div>
+                        <div class="choose">
+                            <input type="radio" name="choose" checked onclick="showprice('price1')"/>40cm
+                            <input type="radio" name="choose"  onclick="showprice('price2')"/>80cm
+                            <input type="radio" name="choose"  onclick="showprice('price3')"/>1m
+                        </div>                       
+                    </div> 
+                    <div class="buy">
+                        <a href="https://www.facebook.com/gaubongmapshop" id="nt"><i class="fa fa-facebook"></i> Chat Facebook </a> 
+                        <a href="muahang.html" id="button"><i class="fa fa-shopping-cart"></i> mua hàng </a> 
+                    </div>                   
+                    <p><h5>hoặc gọi hotline để đặt hàng <span style="color:red;">0961.131.902</span></h5></p>
+                    <table width="100%" class="animate__animated animate__backInUp ">
+                        <tr>
+                            <td><i class="fa fa-check"></i> Miễn phí bọc quà</td>
+                            <td><i class="fa fa-check"></i> Ko xù, ko rụng, ko phai</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-check"></i> Tặng thiệp miễn phí</td>
+                            <td><i class="fa fa-check"></i> Đúng hình ảnh, đúng size</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-check"></i> Hút chân không miễn phí</td>
+                            <td><i class="fa fa-check"></i> Cam kết giá luôn tốt nhất</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-check"></i> Đổi hàng miễn phí</td>
+                            <td><i class="fa fa-check"></i> Ko đẹp hoàn tiền 100%</td>
+                        </tr>
+                    </table>            
+                </div>       
+            </div>
+            <nav>
+                <ul class="menu2">
+                    <li>
+                        <a href="#"><i class="fa fa-info"></i> Mô tả sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-comment"></i> Bình luận</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="table">
+                <h1>Gấu Shin Totoro có nhiều mẫu cho các bạn lựa chọn nhé!</h1>          
+                <p>====================================</p>
+                <p>Tất cả gâu shin của Gấu Mập Shop đều có voi, mặc đồ nũng cũng có(chỉ duy nhất Shin Totoro là không có</p>
+                <p>Sản phẩm gấu bông mịn, Thái lan chính hãng</p>
+                <p>Hàng về thường xuyên, gấu bông giá rẻ, số lượng lớn, bảo đảm quý khách sẽ hài lòng.</p>
+                <p>Gấu bông đẹp bự mới 100%, có sẵn ở shop. Hàng lông xù bắp đáng yêu và lạ mắt. Sản phẩm chính hãng chất lượng cao.</p>
+                <p>bông trắng đàn hồi tinh khiết loại 1</p>
+                <div class="uu">
+                    <div class="banner-sp">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="image/sp/3.3.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image/sp/3.4.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="image/sp/2.5.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <hr>
+                            <hr>
+                            <iframe width="760" height="415" src="https://www.youtube.com/embed/4PMAxQ0PVfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <hr>
+                            <hr>
+                            <iframe width="760" height="415" src="https://www.youtube.com/embed/vBSQNtMeJRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="sptts">
+                        <h3>SẢN PHẨM TƯƠNG TỰ</h3>
+                        <div class="sptt">
+                            <div class="item-sptt">
+                                <figure>
+                                    <div class="image-sptt">
+                                        <img src="image/sp/8.2.jpg" alt="gấu bông"/>
+                                        <div class="button_more">
+                                            <div>
+                                                <div class="t">
+                                                    <a target="self" href="KAIDO.html" ><i class="fa fa-info"></i> Xem ngay</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="x" >
+                                                    <a target="self" href="muahang.html"><i class="fa fa-shopping-cart"></i> Mua ngay</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <figcaption>Khủng Long KaiDo</figcaption>
+                                </figure>
+                            </div>  
+                        </div>
+                        <div class="sptt">
+                            <div class="item-sptt">
+                                <figure>
+                                    <div class="image-sptt">
+                                        <img src="image/mini/1.jpg" alt="gấu bông"/>
+                                        <div class="button_more">
+                                            <div>
+                                                <div class="t">
+                                                    <a target="self" href="unicorn.html" ><i class="fa fa-info"></i> Xem ngay</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="x" >
+                                                    <a target="self" href="muahang.html"><i class="fa fa-shopping-cart"></i> Mua ngay</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <figcaption>Gấu Unicorn</figcaption>
+                                </figure>
+                            </div>  
+                        </div>
+                        <div class="sptt">
+                            <div class="item-sptt">
+                                <figure>
+                                    <div class="image-sptt">
+                                        <img src="image/sp2/6.jpg" alt="gấu bông"/>
+                                        <div class="button_more">
+                                            <div>
+                                                <div class="t">
+                                                    <a target="self" href="Teddy_khan_tim.html" ><i class="fa fa-info"></i> Xem ngay</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="x" >
+                                                    <a target="self" href="muahang.html"><i class="fa fa-shopping-cart"></i> Mua ngay</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <figcaption>Gấu Teddy khăn tim</figcaption>
+                                </figure>
+                            </div>  
+                        </div>
+                        <div class="sptt">
+                            <div class="item-sptt">
+                                <figure>
+                                    <div class="image-sptt">
+                                        <img src="image/sp/4.jpg" alt="gấu bông"/>
+                                        <div class="button_more">
+                                            <div>
+                                                <div class="t">
+                                                    <a target="self" href="Cho_Bull.html" ><i class="fa fa-info"></i> Xem ngay</a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="x" >
+                                                    <a target="self" href="muahang.html"><i class="fa fa-shopping-cart"></i> Mua ngay</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <figcaption>Chó Bull bông</figcaption>
+                                </figure>
+                            </div>  
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <h1>BÌNH LUẬN</h1> 
+            <hr size="3" with="30" color="back"> 
+            <hr size="6" with="30" color="back"> 
+            <div class="ss"> 
+                <form>
+                    <table>
+                        <th>sắp sếp theo</th>
+                        <td>
+                            <select> 
+                                <option value="increase">mới nhất</option>
+                                <option value="discrease">cũ nhất</option>
+                            </select> 
+                        </td>
+                    </table>
+                </form>
+            </div> 
+            <p>
+                <textarea cols="100" rows="4"> Viết bình luận</textarea>
+            </p> 
+            <form>
+                <p><input type="submit" name="Submit" value=" Submit"/></p>
+            </form>
+        </section> 
+        <!--phan cuoi-->
+        <footer>
+            <div class="col">
+                <div class="col30 item-footer">
+                    <h1>Địa chỉ</h1>
+                    <hr color="white" >
+                    <ul class="list-footer">
+                        <h3>Hệ thống cửa hàng</h3> 
+                        <li><i class="fa fa-map"></i> 296 Xô Viết Nghệ Tĩnh F21 Bình Thạnh Shop Gấu Bông Mập-Khúc 2 Chiều</li>
+                        <li><i class="fa fa-map"></i> 42 Xuân Thủy, Cầu Giấy, Hà Nội, Việt Nam - 093.777.6616 </li>
+                        <li><i class="fa fa-map"></i> 77 Bàu Cát 1, phường 14, Tân Bình, Hồ Chí Minh - 09.6618.6616</li>
+                        <li><i class="fa fa-map"></i> 555 Quang Trung, Phường 10, Gò Vấp, Hồ Chí Minh - 09.3377.6616 </li>
+                        <li><i class="fa fa-map"></i> Phố 6, Ngõ 171 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội - 09.7989.6616 - Bán buôn/sỉ: 03.9797.6616 </li>
+                        <li><i class="fa fa-phone"></i> Hotline : ‭0898 828 929  (Zalo)</li>
+                        <li><i class="fa fa-envelope" ></i> <Email: <a href="mailto:gaubonmap@gmail.com">gaubonmap@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col30 item-footer">
+                    <h1>Hỗ Trợ</h1>
+                    <hr color="white">
+                    <ul class="ft list-footer">
+                        <li><a href="">Giới Thiệu & Liên Hệ</a></li>
+                        <li><a href="">Bảo Hành & Đổi Trả</a></li>
+                        <li><a href=""><i class="fa fa-shipping-fast"></i>Giao Hàng Tận Nhà</a></li>
+                    </ul>
+                </div>
+                <div class="col40">
+                    <h2>FANPAGE</h2>
+                    <P>Ủng hộ fanpge nhà mập nhé </P>
+                    <p><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgaubongmapshop&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe></p>
+                </div>
+            </div>
+            <hr color="white">
+            <h3 style="color: aliceblue; text-align:center ;"> bản quyền thuộc về gấu bông mập shop&copy;</h3>
+        </footer>
+        <!--html menumini-->
+        <div class="menumini">
+            <ul>
+                <li title="Trang Chủ" class="animate__animated animate__fadeInDown">
+                    <a target="_self" href="Homepage.html"><i class="fa fa-home"></i></a>
+                </li>
+                <li title="Giới thiệu" id="in1" class="animate__animated animate__fadeInRight">
+                    <a target="_self" href="#introduction"><i class="fa fa-edit"></i></a>
+                </li>
+                <li title="Sản Phẩm" class="animate__animated animate__fadeInRight">
+                    <a target="_self" href="sanpham.html"><i class="fa fa-shopping-basket"></i></a>
+                </li>
+                <li title="Liên hệ" class="animate__animated animate__fadeInUp">
+                    <a target="_self" href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope-o"></i></a>
+                </li>
+            </ul>
+        </div>
+        <!--box chat face-->
+        <style>.fb-livechat, .fb-widget{display: none}.ctrlq.fb-button, .ctrlq.fb-close{position: fixed; right: 24px; cursor: pointer}.ctrlq.fb-button{z-index: 999; background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB3aWR0aD0iMTI4cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxyZWN0IGZpbGw9IiMwMDg0RkYiIGhlaWdodD0iMTI4IiB3aWR0aD0iMTI4Ii8+PC9nPjxwYXRoIGQ9Ik02NCwxNy41MzFjLTI1LjQwNSwwLTQ2LDE5LjI1OS00Niw0My4wMTVjMCwxMy41MTUsNi42NjUsMjUuNTc0LDE3LjA4OSwzMy40NnYxNi40NjIgIGwxNS42OTgtOC43MDdjNC4xODYsMS4xNzEsOC42MjEsMS44LDEzLjIxMywxLjhjMjUuNDA1LDAsNDYtMTkuMjU4LDQ2LTQzLjAxNUMxMTAsMzYuNzksODkuNDA1LDE3LjUzMSw2NCwxNy41MzF6IE02OC44NDUsNzUuMjE0ICBMNTYuOTQ3LDYyLjg1NUwzNC4wMzUsNzUuNTI0bDI1LjEyLTI2LjY1N2wxMS44OTgsMTIuMzU5bDIyLjkxLTEyLjY3TDY4Ljg0NSw3NS4yMTR6IiBmaWxsPSIjRkZGRkZGIiBpZD0iQnViYmxlX1NoYXBlIi8+PC9zdmc+) center no-repeat #0084ff; width: 60px; height: 60px; text-align: center; bottom: 100px; border: 0; outline: 0; border-radius: 60px; -webkit-border-radius: 60px; -moz-border-radius: 60px; -ms-border-radius: 60px; -o-border-radius: 60px; box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16); -webkit-transition: box-shadow .2s ease; background-size: 80%; transition: all .2s ease-in-out}.ctrlq.fb-button:focus, .ctrlq.fb-button:hover{transform: scale(1.1); box-shadow: 0 2px 8px rgba(0, 0, 0, .09), 0 4px 40px rgba(0, 0, 0, .24)}.fb-widget{background: #fff; z-index: 1000; position: fixed; width: 360px; height: 435px; overflow: hidden; opacity: 0; bottom: 0; right: 24px; border-radius: 6px; -o-border-radius: 6px; -webkit-border-radius: 6px; box-shadow: 0 5px 40px rgba(0, 0, 0, .16); -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); -moz-box-shadow: 0 5px 40px rgba(0, 0, 0, .16); -o-box-shadow: 0 5px 40px rgba(0, 0, 0, .16)}.fb-credit{text-align: center; margin-top: 8px}.fb-credit a{transition: none; color: #bec2c9; font-family: Helvetica, Arial, sans-serif; font-size: 12px; text-decoration: none; border: 0; font-weight: 400}.ctrlq.fb-overlay{z-index: 0; position: fixed; height: 100vh; width: 100vw; -webkit-transition: opacity .4s, visibility .4s; transition: opacity .4s, visibility .4s; top: 0; left: 0; background: rgba(0, 0, 0, .05); display: none}.ctrlq.fb-close{z-index: 4; padding: 0 6px; background: #365899; font-weight: 700; font-size: 11px; color: #fff; margin: 8px; border-radius: 3px}.ctrlq.fb-close::after{content: "X"; font-family: sans-serif}.bubble{width: 20px; height: 20px; background: #c00; color: #fff; position: absolute; z-index: 999999999; text-align: center; vertical-align: middle; top: -2px; left: -5px; border-radius: 50%;}.bubble-msg{width: 120px; left: -140px; top: 5px; position: relative; background: rgba(59, 89, 152, .8); color: #fff; padding: 5px 8px; border-radius: 8px; text-align: center; font-size: 13px;}</style><div class="fb-livechat"> <div class="ctrlq fb-overlay"></div><div class="fb-widget"> <div class="ctrlq fb-close"></div><div class="fb-page" data-href="https://www.facebook.com/gaubongmapshop" data-tabs="messages" data-width="360" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false"> </div><div class="fb-credit"> <a href="https://thanhtrungmobile.vn" target="_blank" rel="sponsored">Powered by TT</a> </div><div id="fb-root"></div></div><a href="https://m.me/gaubongmapshop" title="Gửi tin nhắn cho chúng tôi qua Facebook" class="ctrlq fb-button"> <div class="bubble">1</div><div class="bubble-msg">Bạn cần hỗ trợ?</div></a></div><script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script>jQuery(document).ready(function($){function detectmob(){if( navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ){return true;}else{return false;}}var t={delay: 125, overlay: $(".fb-overlay"), widget: $(".fb-widget"), button: $(".fb-button")}; setTimeout(function(){$("div.fb-livechat").fadeIn()}, 8 * t.delay); if(!detectmob()){$(".ctrlq").on("click", function(e){e.preventDefault(), t.overlay.is(":visible") ? (t.overlay.fadeOut(t.delay), t.widget.stop().animate({bottom: 0, opacity: 0}, 2 * t.delay, function(){$(this).hide("slow"), t.button.show()})) : t.button.fadeOut("medium", function(){t.widget.stop().show().animate({bottom: "30px", opacity: 1}, 2 * t.delay), t.overlay.fadeIn(t.delay)})})}});</script>
+        <!--Nut go to top-->
+        <div id="scrollTop"><i class="fa fa-angle-up"></i></div>
+    </body>
+</html>

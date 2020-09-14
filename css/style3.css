@@ -1,0 +1,342 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+ div{
+    display: block;
+ }
+ /*CSS co đinh man hinh*/
+ @media screen and (max-width: 700px) {
+    body {
+    padding: 170px 0 0 0;
+    width: 100%;
+    }
+ }
+  /*CSS HEADER*/
+ div.head{
+     width:80%;
+     height: 50px;
+     margin: 0px auto;
+     vertical-align: middle;
+ }
+ div.head-left{
+     width: 50%;
+     float: left;
+     margin-top: 10px;
+ }
+ div.head-left>a{
+     width: 30x;
+     height: 10px;
+     padding: 7px;
+     margin-left: 1%;
+ }
+ div.head-left>a{
+     width: 20px;
+     height: 20px;
+ }
+ div.head-right{
+     float:right;
+     margin-top: 10px;
+ }
+ #search{
+     padding: 7px;
+     margin-left: 5%;
+     color: black;
+ }
+ /*CSS GO TOP*/
+ #scrollTop{
+    display: block;
+    right: 20px;
+    bottom: 30px;
+    position: fixed;
+    font-size: 26px;
+    border: 1px solid rgb(60, 60, 119);
+    border-radius: 100%;
+    padding: 3px 10px 3px 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+ }
+ /*CSS NAV*/
+ 
+ header{
+    background-color: rgb(211, 193, 180);
+    width: 100%;
+    border-bottom: 1px dotted white;
+ }
+ .col20{
+     width:20%;
+ }
+ .col30{
+    width: 30%;
+ }
+ .col40{
+    width:40%;
+ }
+ .col50{
+    width: 50%;
+ }
+ .col60{
+    width:60%
+ }
+ .col80{
+    width:80%;
+ }
+ .img{
+    width:100%;
+ }
+ .clearfix{
+    clear:both;
+ }
+ div.wrapper{
+    width:80%;
+    margin:0px auto;
+    display: flex;
+ }
+ a.logo>img{
+    height:100%;
+    width:100%;  
+ }
+ ul.menu{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+    display:flex;
+ }
+ ul.menu>li{
+     min-width: 200px;
+     text-align:center;
+     border-right: 1px solid white;
+ }
+ ul.menu>li:last-child{
+     border-right:none;
+ }
+ ul.menu>li>a{
+    display: block;
+    text-decoration: none;
+    color:rgb(68, 44, 44);
+    font-size:20px;
+    font-weight:bold;
+    line-height: 80px;
+ }
+ ul.menu>li>a:hover{
+     background-color:rgb(114, 75, 75) ;
+     color:white;
+     transition: background-color 2s;
+ }
+ /*phan banner*/
+ .slice-product{
+    background-color: #0D1B2B;
+    margin: 0 auto;
+    overflow: hidden; 
+    margin-bottom: 30px;
+    height: 400px;
+ }
+ .flex {
+    display: flex;  
+ }
+ .slider-wrapper div {
+    position: relative;
+ }
+ .slider-wrapper {
+    margin: 40px 0px 0px 40px;
+ }
+ .slide-image {
+    height: 316px;
+    width: 316px; 
+ }
+ .slide-image img {
+    width: 100%; 
+    cursor: pointer;
+ }
+ .slide-content {
+    width: 771px; 
+    color: #fff; 
+    padding: 47px 180px 22px 79px;
+ }
+ .slide-note {
+    color: #0a8acb; 
+    font-size: 13px; 
+    font-weight: 400px; 
+    padding-bottom: 9px;
+    letter-spacing: 1px; 
+ }
+ .slide-title {
+    font-size: 30px; 
+    font-weight: 400px; 
+    line-height: 21px; 
+    padding-bottom: 23px;
+    letter-spacing: 1px;
+ }
+ .slide-text {
+    font-size: 14px; 
+    line-height: 20px; 
+    opacity: 0.8; 
+    padding-bottom: 53px;
+ }
+ .slide-more {
+    font-weight: 400px;
+    font-size: 12px;
+ }
+ .slide-more:hover{
+   cursor: pointer;
+   background-color: orange;
+   opacity: 0.8;
+   color:black;
+   width: 60px;
+}
+.arrows{
+   width: 46px; 
+   margin-top: -70px; 
+   margin-left: 940px; 
+   position: relative;
+}
+.arrow {
+   position: absolute; 
+   width: 15px;
+   height: 15px;  
+   border-top: 2px solid #fff; 
+   border-left: 2px solid #fff; 
+   transition: all .1s ease-in-out; 
+   text-decoration: none;
+}
+.arrow:hover {
+   border-color: #0A8ACB;
+   border-width: 4px;
+}
+
+.arrow.prev {
+   transform: rotate(-45deg);
+   left: 0;
+}
+.arrow.next {
+   transform: rotate(135deg); 
+   right: 0;
+}
+/**/
+.information{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+table.infor , input[type=text].F, input[type=email]/* chỗ này đặt thêm class để khỏi trùng với cái ô tìm kiếm */ , textarea{
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+div.informations{
+    width: 50%;
+    margin-bottom: 20px;
+}
+div.product{
+    width: 40%;
+    border: orange 2px solid;
+    padding: 10px;
+    margin-left: 5%;
+    margin-bottom: 4%;
+}
+#button{
+    box-shadow: 5px 5px 10px 0 gray;
+    padding: 10px 24px 10px 24px;
+    text-align: center;
+    width: 30%;
+    display: block;  
+    background-color: coral;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 25%;
+}
+/*CSS FOOTER*/
+footer{
+    background-color: #212529;
+    color:#DEE2E6;
+    padding: 20px;
+ }
+ footer ul{
+    list-style-type: none;
+    padding : 0px;
+    margin : 0px;
+ }
+ div.col{
+    display: flex;
+    width: 100%;
+    margin: auto;
+ }
+ .item-footer{
+    margin-right: 15%;  
+ }
+ ul.ft>li>a{
+    padding: 0%; 
+    color: white;
+ }
+ ul.ft>li>a:hover{
+    color: rgb(247, 137, 118);
+ }
+/*CSS modal*/
+.modal-dialog{
+   overflow-y: initial !important
+}
+.modal-body{
+   height: 400px;
+   overflow-y: auto;
+   margin: auto;
+}
+/*css menumini*/
+div.menumini{
+   position: relative;
+}
+div.menumini ul{
+   list-style-type: none;
+   padding:0px;
+   margin:0px;
+   display:flex;
+   flex-direction: column;
+   bottom: 100px;
+   left:0px;
+   position: fixed;
+   opacity: 0.8;
+}
+div.menumini ul li{
+   width: 60px;
+   height: 60px;
+   border: 1px solid gray;
+   border-radius: 10px;
+   background-color:lightgray;
+   cursor: pointer;
+}
+div.menumini ul li a{
+   text-decoration: none;
+   display: block;
+   position: relative;
+   transition: 0.5s;
+
+}
+div.menumini ul li a i{
+   display: block;
+   font-size: 30px;
+   line-height:60px;
+   padding-left: 14px;
+   color: black;
+}
+div.menumini ul li a::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   transform: scaleX(0.5);
+   transition: transform 0.5s;
+   z-index: -1;
+   border-radius: 10px;
+   
+}
+div.menumini ul li a:hover::before{
+   position: absolute;
+   content:'';
+   background-color: burlywood;
+   text-align: center;
+   transform: scaleX(1);
+   transform-origin: left;
+
+}
